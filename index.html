@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title>Tu Tablero</title>
+
+<body>
+	<div class="grid-container">
+    <header class="header">
+      <div class="header__menu" id="header__menu-click">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="header__search">
+        <input type="text" name="header__search" placeholder="Buscar..."/>
+      </div>
+      <div class="header__avatar" id="header__avatar-click">
+        <div class="dropdown" id="dropdown__hidden">
+          <ul class="dropdown__list">
+            <li class="dropdown__list-item">
+              <span class="dropdown__icon"><i class="far fa-user"></i></span>
+              <span class="dropdown_title">Mi Perfil</span>
+            </li>
+            <li class="dropdown__list-item">
+              <span class="dropdown__icon"><i class="fas fa-clipboard-list"></i></span>
+              <span class="dropdown_title">Mi cuenta</span>
+            </li>
+            <li class="dropdown__list-item">
+              <span class="dropdown__icon"><i class="fas fa-sign-out-alt"></i></span>
+              <span class="dropdown_title"><a href="https://anatana.netlify.app">Salir</a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+		<aside class="sidenav" id="sidenav">
+      <div class="sidenav__close-icon" id="sidenav__close-click">
+        <i class="fa fa-times sidenav__brand-close"></i>
+      </div>
+      <div class="sidenav__profile">
+        <div class="sidenav__profile-avatar"></div>
+        <div class="sidenav__profile-title">Odair Augusto</div>
+      </div>
+			<!-- ELEMENTOS PRINCIPALES DEL MENÚ -->
+			<ul class="sidenav__mainlist">
+				<!-- PRIMER ELEMENTO PRINCIPAL -->
+				<li class="sidenav__mainlist-element">MENSAJES<i class="far fa-envelope"></i></li>
+				<ul class="sidenav__list">
+					<li class="sidenav__list-item"><span class="sidenav__list-icon-title">
+						<i class="fas fa-envelope"></i>Recibidos</span>
+					</li>
+					<ul class="sublist__container">
+						<li>
+							<p class="sublist__container-item">Subítem 1</p>
+							<p class="sublist__container-item">Subítem 2</p>
+							<p class="sublist__container-item">Subítem 3</p>
+						</li>
+					</ul>
+					<li class="sidenav__list-item"><span class="sidenav__list-icon-title">
+						<i class="fas fa-eye"></i>No Leídos</span>
+					</li>
+					<ul class="sublist__container">
+						<li>
+							<p class="sublist__container-item">Subítem 1</p>
+							<p class="sublist__container-item">Subítem 2</p>
+							<p class="sublist__container-item">Subítem 3</p>
+						</li>
+					</ul>
+					<li class="sidenav__list-item"><span class="sidenav__list-icon-title">
+						<i class="fas fa-archive"></i>Archivados</span>
+					</li>
+					<ul class="sublist__container">
+						<li>
+							<p class="sublist__container-item">Subítem 1</p>
+							<p class="sublist__container-item">Subítem 2</p>
+							<p class="sublist__container-item">Subítem 3</p>
+						</li>
+					</ul>
+				</ul>
+				<!-- SEGUNDO ELEMENTO PRINCIPAL -->
+				<li class="sidenav__mainlist-element">AGENDA<i class="far fa-calendar-alt"></i></li>
+				<ul class="sidenav__list">
+					<li class="sidenav__list-item"><span class="sidenav__list-icon-title">
+						<i class="fas fa-icons"></i>Sociales</span>
+					</li>
+					<ul class="sublist__container">
+						<li>
+							<p class="sublist__container-item">Subítem 1</p>
+							<p class="sublist__container-item">Subítem 2</p>
+							<p class="sublist__container-item">Subítem 3</p>
+						</li>
+					</ul>
+					<li class="sidenav__list-item"><span class="sidenav__list-icon-title">
+						<i class="fas fa-user-shield"></i>Privado</span>
+					</li>
+					<ul class="sublist__container">
+						<li>
+							<p class="sublist__container-item">Subítem 1</p>
+							<p class="sublist__container-item">Subítem 2</p>
+							<p class="sublist__container-item">Subítem 3</p>
+						</li>
+					</ul>
+					<li class="sidenav__list-item"><span class="sidenav__list-icon-title">
+						<i class="fas fa-handshake"></i>Reuniones</span>
+					</li>
+					<ul class="sublist__container">
+						<li>
+							<p class="sublist__container-item">Subítem 1</p>
+							<p class="sublist__container-item">Subítem 2</p>
+							<p class="sublist__container-item">Subítem 3</p>
+						</li>
+					</ul>
+				</ul>
+				<!-- TERCER ELEMENTO PRINCIPAL -->
+				<li class="sidenav__mainlist-element">GENERALES<i class="fas fa-sliders-h"></i></li>
+				<ul class="sidenav__list">
+					<li class="sidenav__list-item"><span class="sidenav__list-icon-title">
+						<i class="fas fa-paint-brush"></i>Aspecto</span>
+					</li>
+					<ul class="sublist__container">
+						<li>
+							<p class="sublist__container-item">Subítem 1</p>
+							<p class="sublist__container-item">Subítem 2</p>
+							<p class="sublist__container-item">Subítem 3</p>
+						</li>
+					</ul>
+					<li class="sidenav__list-item"><span class="sidenav__list-icon-title">
+						<i class="far fa-credit-card"></i>Medios de pago</span>
+					</li>
+					<ul class="sublist__container">
+						<li>
+							<p class="sublist__container-item">Subítem 1</p>
+							<p class="sublist__container-item">Subítem 2</p>
+							<p class="sublist__container-item">Subítem 3</p>
+						</li>
+					</ul>
+					<li class="sidenav__list-item"><span class="sidenav__list-icon-title">
+						<i class="far fa-question-circle"></i>Ayuda</span>
+					</li>
+					<ul class="sublist__container">
+						<li>
+							<p class="sublist__container-item">Subítem 1</p>
+							<p class="sublist__container-item">Subítem 2</p>
+							<p class="sublist__container-item">Subítem 3</p>
+						</li>
+					</ul>
+				</ul>
+			</ul>
+
+    </aside>
+
+    <main class="main">
+      <div class="main-header">
+        <div class="main-header__heading">Hola <b><?php echo htmlspecialchars($_SESSION["username"]);?></b></div>
+        <div class="main-header__updates">Elementos Recientes</div>
+      </div>
+
+      <div class="main-overview">
+        <div class="overviewcard">
+          <div class="overviewcard__icon">Ícono 1</div>
+          <div class="overviewcard__info">Contenido de la tarjeta</div>
+        </div>
+        <div class="overviewcard">
+          <div class="overviewcard__icon">Ícono 2</div>
+          <div class="overviewcard__info">Contenido de la tarjeta</div>
+        </div>
+        <div class="overviewcard">
+          <div class="overviewcard__icon">Ícono 3</div>
+          <div class="overviewcard_info">Contenido de la tarjeta</div>
+        </div>
+        <div class="overviewcard">
+          <div class="overviewcard__icon">Ícono 4</div>
+          <div class="overviewcard__info">Contenido de la tarjeta</div>
+        </div>
+      </div>
+
+      <div class="main-cards">
+        <div class="card">Tarjeta 1</div>
+        <div class="card">Tarjeta 2</div>
+        <div class="card">Tarjeta 3</div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__copyright">&copy; 2020 Magna Orbis Software</div>
+      <div class="footer__signature">Anatana, salud y vida</div>
+    </footer>
+
+	</div>
+</body>
+  <script src="https://kit.fontawesome.com/dfd09db611.js" crossorigin="anonymous"></script>
+	<script>
+		// Código para alternar el nombre de la clase .active que aplica translateX(0)
+
+		// Obtener los elementos del DOM
+		const menuIconEl = document.getElementById('header__menu-click');
+		const sidenavEl = document.getElementById('sidenav');
+		const sidenavCloseEl = document.getElementById('sidenav__close-click');
+
+		// Abrir el sidenav al hacer click
+		menuIconEl.addEventListener("click", function(){
+			sidenavEl.classList.toggle('sidenav--active');
+		});
+
+		// Cerrar el sidenav al hacer clic
+		sidenavCloseEl.addEventListener('click', function() {
+			sidenavEl.classList.toggle('sidenav--active');
+		});
+
+		// Agregar evento click a los dropdown-btn
+		const sidenavListEl = document.getElementsByClassName("sidenav__list-item");
+
+		for (var i = 0; i < sidenavListEl.length; i++) {
+			sidenavListEl[i].addEventListener("click", function() {
+				this.classList.toggle("list--active");
+				// Obtener el siguiente elemento hermano y cambiar atributo max-height
+				const hiddenContent = this.nextElementSibling;
+				if (hiddenContent.style.maxHeight) {
+					hiddenContent.style.maxHeight = null;
+				} else {
+					hiddenContent.style.maxHeight = hiddenContent.scrollHeight + "px";
+				}
+			});
+		}
+
+		// Agregar evento click al dropdown menú del avatar
+		const headerAvatarEl = document.getElementById("header__avatar-click");
+		const dropdownEl = document.getElementById("dropdown__hidden");
+
+		headerAvatarEl.addEventListener("click", function() {
+			dropdownEl.classList.toggle("dropdown--active");
+		});
+
+	</script>
+</head>
+</html>
